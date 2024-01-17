@@ -49,18 +49,6 @@ def print_flashcards(flashcards):
         print("\n")
 
 
-def print_flashcards2(flashcards):
-    console = Console()
-    table = Table(show_header=True, header_style="bold magenta")
-    table.add_column("Flashcard #", style="dim")
-    table.add_column("Summary")
-
-    for i, card in enumerate(flashcards):
-        table.add_row(str(i + 1), card)
-
-    console.print(table)
-
-
 def main():
     try:
         from secret import API_KEY
